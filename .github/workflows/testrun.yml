@@ -1,0 +1,14 @@
+name: TestRun
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install
+        run: npm install
+      - name: run app
+        run: npm start
